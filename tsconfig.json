@@ -10,6 +10,9 @@
   },
   "ts-node": {
     "esm": true,
+    "compilerOptions": {
+      "module": "commonjs"
+    }
   },
   "include": [
     "src",
