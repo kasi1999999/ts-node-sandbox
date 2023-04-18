@@ -1,0 +1,23 @@
+{
+  "name": "my-package",
+  "type": "module",
+  "scripts": {
+    "test": "mocha",
+    "consoleTsNodeEsm": "npx ts-node-esm -e 'const a = () => console.log(\"Hello, world!\"); a();'",
+    "consoleTsNodeEsmExport": "npx ts-node-esm -e 'const a = () => console.log(\"Hello, world!\"); a(); export {a}'",
+    "consoleTsNode": "npx ts-node -e 'const a = () => console.log(\"Hello, world!\"); a(); export {a}'"
+  },
+  "devDependencies": {
+    "@types/chai-as-promised": "^7.1.4",
+    "@types/mocha": "^9.0.0",
+    "@types/node": "^16.18.23",
+    "@types/sinon": "^10.0.14",
+    "chai": "^4.3.4",
+    "chai-as-promised": "^7.1.1",
+    "mocha": "^10.2.0",
+    "sinon": "^15.0.3",
+    "ts-node": "^10.9.1",
+    "tslib": "^2.5.0",
+    "typescript": "^5.0.4"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "declaration": true,
+    "sourceMap": true,
+    "target": "esnext",
+    "module": "NodeNext",
+    "strict": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "ts-node": {
+    "esm": true,
+  },
+  "include": [
+    "src",
+    "types",
+    "test"
+  ]
+}
