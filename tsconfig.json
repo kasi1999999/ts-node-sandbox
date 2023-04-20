@@ -8,15 +8,9 @@
     "strict": true,
     "allowSyntheticDefaultImports": true
   },
-  "ts-node": {
-    "esm": true,
-    "compilerOptions": {
-      "module": "commonjs"
-    }
-  },
   "include": [
     "src",
     "types",
     "test"
-  ]
+  ],
 }

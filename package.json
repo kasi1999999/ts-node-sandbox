@@ -3,9 +3,9 @@
   "type": "module",
   "scripts": {
     "test": "mocha",
-    "consoleTsNodeEsm": "npx ts-node-esm -e 'const a = () => console.log(\"Hello, world!\"); a();'",
-    "consoleTsNodeEsmExport": "npx ts-node-esm -e 'const a = () => console.log(\"Hello, world!\"); a(); export {a}'",
-    "consoleTsNode": "npx ts-node -e 'const a = () => console.log(\"Hello, world!\"); a(); export {a}'"
+    "consoleTsNodeEsm": "npx ts-node-esm -O '{\"module\": \"commonjs\"}' -e 'const a = () => console.log(\"Hello, world!\"); a();'",
+    "consoleTsNodeEsmExport": "npx ts-node-esm -O '{\"module\": \"commonjs\"}' -e 'const a = () => console.log(\"Hello, world!\"); a(); export {a}'",
+    "consoleTsNode": "npx ts-node -O '{\"module\": \"commonjs\"}' -e 'const a = () => console.log(\"Hello, world!\"); a(); export {a}'"
   },
   "devDependencies": {
     "@types/chai-as-promised": "^7.1.4",
